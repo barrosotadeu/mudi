@@ -1,4 +1,8 @@
-<html>
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+	
 	<head>
 		<meta charset="UTF-8">
 		<!-- CSS only -->
@@ -13,7 +17,8 @@
 						<div class="col-12 col-sm-8 mb-3">
 								<div class="row">
 									<div class="col-md-5">Valor: <span th:text="${pedido.valorNegociado}">299,00</span></div>
-									<div class="col-md-7">Data de entrega: <span th:text="${pedido.dataDaEntrega}">10/02/2023</span></div>
+									<div class="col-md-7">Data de entrega:25/12/2022</div> 
+									<!-- <div class="col-md-7">Data de entrega: <span th:text="${pedido.dataDaEntrega}">10/02/2023</span></div> -->
 								</div>								
 								<div>Produto</div>
 								<div><input class="form-control" th:value="${pedido.urlDoProduto}" value="url do produto"/></div>
@@ -32,3 +37,4 @@
 		</div>
 	</body>
 </html>
+
